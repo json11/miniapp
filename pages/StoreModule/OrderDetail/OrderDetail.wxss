@@ -1,0 +1,4 @@
+/* pages/StoreModule/OrderDetail/OrderDetail.wxss */
+page {
+  background: #f8f8f8;
+}

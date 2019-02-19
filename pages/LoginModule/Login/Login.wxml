@@ -1,0 +1,5 @@
+<!--pages/Login/Login.wxml-->
+
+<auth wx:if="{{state===1}}" code="{{code}}" bindauth='onAuth'></auth>
+
+<login wx:if="{{state===2}}" style="height:100%;" bindlogin='onLogin'></login>

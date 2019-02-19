@@ -1,0 +1,128 @@
+/* pages/LoginModule/ForgetPWD/ForgetPWD.wxss */
+
+page {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome {
+  display: block;
+  font-size: 52rpx;
+  color: #4a4a4a;
+  margin-left: 50rpx;
+  margin-top: 120rpx;
+}
+
+.subWelcome {
+  font-size: 28rpx;
+  color: #9b9b9b;
+  margin-left: 50rpx;
+}
+
+.phoneInput {
+  margin-top: 120rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  font-size: 34rpx;
+  margin-bottom: 20rpx;
+}
+
+.lineSep {
+  height: 2rpx;
+  background-color:#eee;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+}
+
+.activeLineSep {
+  height: 2rpx;
+  background-color:#ffe600;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+}
+
+.codeInputBody {
+  display: flex;
+  margin-top: 20rpx;
+  flex-direction: row;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.codeInput {
+  font-size: 34rpx;
+  flex:1 ;
+  display: flex;
+}
+
+.forgetTextView {
+  margin-left: 20rpx;
+}
+
+.forgetText {
+  font-size: 28rpx;
+  color: #4a4a4a;
+}
+
+.forgetSep {
+  margin-top: 6rpx;
+  height: 28rpx;
+  width: 2rpx;
+  background-color: #4a4a4a;
+  display: inline-block;
+}
+
+.eyeView {
+  display: flex;
+  height: 60rpx;
+  width: 60rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.eyeImage {
+  height: 30rpx;
+  width: 30rpx;
+}
+
+/* .submit {
+  margin-top: 80rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  height: 112rpx;
+  color: #4a4a4a;
+  font-size: 40rpx;
+  border-radius: 56rpx;
+  padding-top: 6rpx;
+  background: linear-gradient(90deg, #ffe540aa, #ffe540);
+} */
+
+.submit {
+  margin-top: 106rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  height: 112rpx;
+  color: #4a4a4a;
+  font-size: 40rpx;
+  border-radius: 56rpx;
+  padding-top: 6rpx;
+  background-image:linear-gradient(132deg,#ffe540 60%, #ffe540);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit::after {
+  border: none;
+}
+
+.version {
+  position: fixed;
+  bottom: 40rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  color: #4a4a4a;
+}

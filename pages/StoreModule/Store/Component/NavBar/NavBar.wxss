@@ -1,0 +1,49 @@
+/* pages/StoreModule/Store/Component/NavBar/NavBar.wxss */
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 88rpx;
+  background: #fff;
+  z-index: 99;
+}
+.navItem {
+  flex: 1;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+}
+.navItem text {
+  font-size: 32rpx;
+  color: #9b9b9b;
+}
+.navItem.active text {
+  font-weight: 500;
+  color: #000;
+}
+.line {
+  position: absolute;
+  left:60rpx;
+  bottom: 14rpx;
+  background:#ffe600;
+  border-radius:6rpx;
+  width:60rpx;
+  height:4rpx;
+  transition: all linear 300ms;
+}
+.pos0 {
+  left: 60rpx;
+}
+.pos1 {
+  left: 250rpx;
+}
+.pos2 {
+  left: 437rpx;
+}
+.pos3 {
+  left: 625rpx;
+}

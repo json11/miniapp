@@ -1,0 +1,8 @@
+<!--Components/Apply/PictureCell/PictureCell.wxml-->
+
+<view class='body' catchtap='onClick'>
+  <view class='imageBody'>
+    <image src="{{ local || src || phImage }}" style='width: {{ imageWidth }};height: {{ imageHeight }}'></image>
+  </view>
+  <text class='title'>{{ title }}</text>
+</view>

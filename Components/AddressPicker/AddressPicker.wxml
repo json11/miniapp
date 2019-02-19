@@ -1,0 +1,27 @@
+<!--pages/WaitTaskModule/Merchant/IntendedAlter/AddressPicker/AddressPicker.wxml-->
+
+<!--隐藏区域  -->
+<view class='maskLayer' wx:if="{{show}}" catchtap='hideModal' catchtouchmove='onMove' animation="{{ maskAnimationData }}"></view>
+<view class='choose' wx:if="{{show}}" animation='{{animationData}}' catchtouchmove='onMove'>
+  <view class='toolBar'>
+    <text class='toolBarCancel'>请选择：</text>
+  </view>
+  <view class='sep'></view>
+  <view class='dataBody'>
+  <scroll-view class='scollView' scroll-y="{{ true }}">
+    <view class='cell' wx:for="{{ provinceData }}" wx:key="{{ item.addressId }}" catchtap='onClickProvince' data-item="{{ item }}">
+      <text class="{{ item.addressId === province.addressId ? 'cellSelectedText' : 'cellText' }}">{{ item.addressName }}</text>
+    </view>
+  </scroll-view>
+  <scroll-view class='scollView' scroll-y="{{ true }}">
+    <view class='cell' wx:for="{{ cityData }}" wx:key="{{ item.addressId }}" catchtap='onClickCity' data-item="{{ item }}">
+        <text class="{{ item.addressId === city.addressId ? 'cellSelectedText' : 'cellText' }}">{{ item.addressName }}</text>
+    </view>
+  </scroll-view>
+  <scroll-view class='scollView' scroll-y="{{ true }}">
+    <view class='cell' wx:for="{{ areaData }}" wx:key="{{ item.addressId }}" catchtap='onClickArea' data-item="{{ item }}">
+        <text class="{{ item.addressId === area.addressId ? 'cellSelectedText' : 'cellText' }}">{{ item.addressName }}</text>
+    </view>
+  </scroll-view>
+</view>
+</view>

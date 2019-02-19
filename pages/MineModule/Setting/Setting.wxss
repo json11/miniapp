@@ -1,0 +1,5 @@
+/* pages/MineModule/Setting/Setting.wxss */
+
+page {
+  background-color: #f8f8f8;
+}

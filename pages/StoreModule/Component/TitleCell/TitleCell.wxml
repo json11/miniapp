@@ -1,0 +1,10 @@
+
+<view class='titleCell'>
+  <view class='hd'>
+    <view class='titleLine'></view>
+    <text>{{title}}</text>
+  </view>
+  <view class='ft'>
+    <text>{{desc}}</text>
+  </view>
+</view>

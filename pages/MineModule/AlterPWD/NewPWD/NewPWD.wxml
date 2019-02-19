@@ -1,0 +1,66 @@
+<!--pages/MineModule/AlterPWD/NewPwd/NewPWD.wxml-->
+
+<!-- 提示 -->
+<text class='welcome'>新的登录密码</text>
+
+<!-- 新密码 -->
+<view class='codeInputBody'>
+
+    <!-- 输入框 -->
+    <input 
+    bindfocus='onPWDBeginEdit'
+    bindblur='onPWDEndEdit' 
+    class='codeInput' 
+    password="{{!showPWD}}" 
+    bindinput='onPWDChangeText' 
+    placeholder='请输入新的密码' 
+    value='{{pwd}}'></input>
+
+    <!-- 小眼睛 -->
+    <view class='eyeView' bindtap='onClickEyeAction'>
+      <image 
+      class='eyeImage'
+      mode='aspectFit' 
+      src="{{showPWD ? '/Source/Common/icon_eye_open.png' : '/Source/Common/icon_eye_close.png'}}"></image>
+    </view>
+</view>
+
+<!-- 新密码底部分割线 -->
+<view class="{{PWDEditing ? 'activeLineSep' : 'lineSep'}}"></view>
+
+<!-- 重新输入密码 -->
+<view class='codeInputBody ensureCodeInputBody'>
+
+    <!-- 输入框 -->
+    <input 
+    bindfocus='onEnsurePWDBeginEdit'
+    bindblur='onEnsurePWDEndEdit' 
+    class='codeInput' 
+    password="{{!showEnsurePWD}}" 
+    bindinput='onEnsurePWDChangeText' 
+    placeholder='请输重新入新的密码' 
+    value='{{ensurePWD}}'></input>
+
+    <!-- 小眼睛 -->
+    <view class='eyeView' bindtap='onClickEnsureEyeAction'>
+      <image 
+      class='eyeImage'
+      mode='aspectFit' 
+      src="{{showEnsurePWD ? '/Source/Common/icon_eye_open.png' : '/Source/Common/icon_eye_close.png'}}"></image>
+    </view>
+
+</view>
+
+<!-- 重新输入密码分割线 -->
+<view class="{{ensurePWDEditing ? 'activeLineSep' : 'lineSep'}}"></view>
+
+<view class='warning'>
+  <image class='warningImage'></image>
+  <text class='warningText'>提示：密码长度8-20位，需包含数字、字母（不区分大小写）、特殊字符中的两种及两种以上</text>
+</view>
+
+<!-- 下一步 -->
+<view
+style="opacity:{{ contentValid ? 1 : 0.6 }}"
+bindtap='onEnsure'
+class='submit'>确 定</view>

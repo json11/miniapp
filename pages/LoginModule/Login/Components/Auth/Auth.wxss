@@ -1,0 +1,25 @@
+/* pages/Login/Components/Auth/Auth.wxss */
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authImage {
+  width: 160rpx;
+  height: 160rpx;
+  overflow: hidden;
+  margin-top: 106rpx;
+  border-radius: 20rpx;
+}
+
+text.sm {
+  font-size: 32rpx;
+  color: black;
+  margin-top: 20rpx;
+}
+
+.loading {
+  background-color: transparent;
+}

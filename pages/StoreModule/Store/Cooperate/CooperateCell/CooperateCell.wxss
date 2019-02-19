@@ -1,0 +1,57 @@
+/* pages/StoreModule/Store/Cooperate/CooperateCell/CooperateCell.wxss */
+.brandItem {
+  margin-bottom: 10rpx;
+  background: #fff;
+}
+.modelWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 248rpx;
+  padding: 0 40rpx;
+  overflow-x: auto;
+}
+.modelItem {
+  width: 180rpx;
+  margin: 0 40rpx;
+}
+.modelItem .pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180rpx;
+  height: 160rpx;
+  background:rgba(200,200,200,0.15);
+  border-radius:18rpx;
+}
+.modelItem .pic image {
+  width: 160rpx;
+  height: 88rpx;
+}
+.modelItem .modelName {
+  height: 24rpx;
+  margin-top: 24rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #000;
+}
+
+.titleCell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 76rpx;
+  background: #fff;
+}
+.titleCell .titleLine {
+  width: 4rpx;
+  height: 44rpx;
+  background: #ffe600;
+}
+.titleCell text {
+  margin-left: 20rpx;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}

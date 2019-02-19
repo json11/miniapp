@@ -1,0 +1,33 @@
+<!--pages/StatisticModule/SubordinateList/SubordinateList.wxml-->
+
+<view wx:if="{{empty}}" class='emptyText'>
+  <text>当前人员无下级</text>
+</view>
+
+<scroll-view wx:if="{{data.length}}" scroll-y="{{true}}" scroll-x="{{false}}" bindscrolltoupper='scrollToTop'>
+
+  <!-- header 进货量 -->
+  <view class='header'>
+    <view class='headerSep'></view>
+    <text class='headerTitle'>进货量</text>
+    <text class='headerSubTitle'>单位：辆</text>
+  </view>
+
+  <view class='menu'>
+    <text class='menuText'>排名</text>
+    <text class='menuText'>数量</text>
+    <text class='menuText'>姓名</text>
+  </view>
+
+  <view class='item' wx:for="{{data}}" wx:key="{{item.index}}">
+    <view class='itemTextBody'>
+      <text class='itemText'>{{item.index}}</text>
+      <text class='itemText'>{{item.num || 0}}</text>
+      <text class='itemText'>{{item.name || ''}}</text>
+    </view>
+    <view class='sep'></view>
+  </view>
+
+</scroll-view>
+
+

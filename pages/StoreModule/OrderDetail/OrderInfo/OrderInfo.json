@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "titlecell": "../../Component/TitleCell/TitleCell"
+  }
+}

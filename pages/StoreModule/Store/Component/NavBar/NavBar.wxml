@@ -1,0 +1,5 @@
+<!--pages/StoreModule/Store/Component/NavBar/NavBar.wxml-->
+<view class='navBar'>
+    <view class='navItem {{navBar.index === currentIndex ? "active" : ""}}' wx:for="{{navBars}}" wx:for-item="navBar" wx:key="unique" bindtap="onSelect" data-index="{{navBar.index}}"><text>{{navBar.title}}</text></view> 
+    <view class='line pos{{currentIndex}}'></view>
+</view>

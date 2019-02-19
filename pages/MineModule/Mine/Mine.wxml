@@ -1,0 +1,27 @@
+<!--pages/MineModule/Mine/Mine.wxml-->
+
+<!-- 头部 -->
+<view class='header'>
+  <!-- icon -->
+  <view class='headerImageView'>
+    <image src='./Source/header.png' class='headerImage'></image>
+  </view>
+  <!-- 右侧部分 -->
+  <view class='hr'>
+    <!-- 右侧上半部分 -->
+    <view class='hrtb'>
+      <!-- 名称 -->
+      <text class='hName'>{{ data.name || '' }}</text>
+      <!-- 职务 -->
+      <text class='hIdentify'>{{'（' + (data.orgName || '') + '）' }}</text>
+    </view>
+    <!-- 管辖区域 -->
+    <text class='hrbb'>{{ data.manageArea || '' }}</text>
+  </view>
+</view>
+
+<view style='margin-top: 10rpx;'></view>
+
+<imagetitlerow bindselected='onSelectedHierarchy' icon='/pages/MineModule/Mine/Source/manager.png' title='层级管理'></imagetitlerow>
+
+<imagetitlerow bindselected='onSelectedSetting' icon='/pages/MineModule/Mine/Source/setting.png' title='设置'></imagetitlerow>

@@ -1,0 +1,81 @@
+{
+  "pages": [
+    "pages/LoginModule/jiandian/jiandian",
+    "pages/LoginModule/Login/Login",
+    "pages/HomeModule/Home/Home",
+    "pages/MineModule/Mine/Mine",
+    "pages/StoreModule/StoreList/StoreList",
+    "pages/StatisticModule/Business/Business",
+    "pages/WaitTaskModule/MyMerchantList/MyMerchantList",
+    "pages/WaitTaskModule/MerchantFetch/MerchantFetch",
+    "pages/WaitTaskModule/TaskList/TaskList",
+    "pages/WaitTaskModule/Merchant/Detail/Detail",
+    "pages/WaitTaskModule/Merchant/VisitAlter/VisitAlter",
+    "pages/WaitTaskModule/Merchant/IntendedAlter/IntendedAlter",
+    "pages/StoreModule/Store/Store",
+    "pages/StoreModule/WaitPay/WaitPay",
+    "pages/StoreModule/OrderDetail/OrderDetail",
+    "pages/MineModule/Hierarchy/Hierarchy",
+    "pages/MineModule/Setting/Setting",
+    "pages/MineModule/AlterPWD/OldPWD/OldPWD",
+    "pages/MineModule/AlterPWD/NewPWD/NewPWD",
+    "pages/jiandain/jiandian"
+  ],
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "饭饭",
+    "navigationBarTextStyle": "black",
+    "pageOrientation": "portrait"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/HomeModule/Home/Home",
+        "text": "首页",
+        "iconPath": "./Source/TabBarIcon/icon_homen.png",
+        "selectedIconPath": "./Source/TabBarIcon/icon_homey.png"
+      },
+      {
+        "pagePath": "pages/StoreModule/StoreList/StoreList",
+        "text": "门店",
+        "iconPath": "./Source/TabBarIcon/icon_shopn.png",
+        "selectedIconPath": "./Source/TabBarIcon/icon_shopY.png"
+      },
+      {
+        "pagePath": "pages/MineModule/Mine/Mine",
+        "text": "我的",
+        "iconPath": "./Source/TabBarIcon/icon_myn.png",
+        "selectedIconPath": "./Source/TabBarIcon/icon_myy.png"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "color": "#9b9b9b",
+    "selectedColor": "#000000",
+    "position": "bottom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "饭饭需要使用您的位置信息"
+    }
+  },
+  "usingComponents": {
+    "sm-button": "/Components/SMButton/SMButton",
+    "imagetitlerow": "/Components/ImageTitleRow/ImageTitleRow",
+    "titlepickercell": "/Components/Apply/TitlePickerCell/TitlePickerCell",
+    "titleinputcell": "/Components/Apply/TitleInputCell/TitleInputCell",
+    "verifycodecell": "/Components/Apply/VerifyCodeCell/VerifyCodeCell",
+    "segmentcontrol": "/Components/SegmentControl/SegmentControl",
+    "segmentcontrolcell": "/Components/Apply/SegmentControlCell/SegmentControlCell",
+    "titlecell": "/Components/Apply/TitleCell/TitleCell",
+    "picturecell": "/Components/Apply/PictureCell/PictureCell",
+    "pagebar": "/Components/PageBar/PageBar",
+    "address-picker": "/Components/AddressPicker/AddressPicker",
+    "search-bar": "/Components/Search/Search"
+  }
+}

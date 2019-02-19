@@ -1,0 +1,29 @@
+/* pages/StoreModule/Store/StoreBoard/StoreData/StoreData.wxss */
+.dataInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 168rpx;
+  padding: 0 24rpx;
+}
+.data-item {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  font-size: 24rpx;
+  color: #4a4a4a;
+}
+.data-item .value {
+  font-size: 40rpx;
+}
+.data-item .name {
+  margin-top: 20rpx;
+}
+.data-item .rightLine {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2rpx;
+  height: 80rpx;
+  background: #f6f6f6;
+}

@@ -1,0 +1,55 @@
+<!--pages/StoreModule/Store/StoreInfo/StoreInfo.wxml-->
+
+<view class='container'>
+  <view class='wrapper baseInfo'>
+     <view class='titleCell'>
+        <view class='titleLine'></view>
+        <text>基本信息</text>
+      </view>
+      <view>
+        <!-- 门店名称 -->
+        <view class='item'>
+          <text class='hd'>门店名称：</text>
+          <text class='bd'>{{storeInfo.storeName || ''}}</text>
+        </view> 
+        <!-- 门店编号 -->
+        <view class='item'>
+          <text class='hd'>门店编号：</text>
+          <text class='bd'>{{storeInfo.storeNo || ''}}</text>
+        </view> 
+        <!-- 门店地址 -->
+        <view class='item'>
+          <text class='hd'>门店地址：</text>
+          <text class='bd'>{{storeInfo.address || ''}}</text>
+        </view> 
+        <!-- 法人姓名 -->
+        <view class='item'>
+          <text class='hd'>法人姓名：</text>
+          <text class='bd'>{{storeInfo.legalPersonName || ''}}</text>
+        </view> 
+        <!-- 经营人姓名 -->
+        <view wx:if="{{storeInfo.transactorPersonName}}" class='item'>
+          <text class='hd'>经营人姓名：</text>
+          <text class='bd'>{{storeInfo.transactorPersonName || ''}}</text>
+        </view>
+        <!-- 联系手机号 -->
+        <view class='item' catchtap='tel' data-tel="{{storeInfo.telephone || ''}}">
+          <text class='hd'>联系手机号：</text>
+          <text class='bd'>{{storeInfo.telephone || ''}}</text>
+          <image class='ft' src='../../../../Source/Common/phone.png'></image>
+        </view> 
+      </view>
+  </view>
+  <view class='wrapper manageInfo'>
+    <view class='titleCell'>
+      <view class='titleLine'></view>
+      <text>经营信息</text>
+    </view>
+    <view>
+      <view class='item'><text class='hd'>门店级别：</text><text class='bd'>{{storeInfo.level || ''}}</text></view> 
+      <view class='item'><text class='hd'>门店来源：</text><text class='bd'>{{storeInfo.source || ''}}</text></view> 
+      <view class='item'><text class='hd'>门店层级：</text><text class='bd'>{{storeInfo.rank || ''}}</text></view> 
+      <view class='item'><text class='hd'>开户日期：</text><text class='bd'>{{storeInfo.accessTime}}</text></view>
+    </view>
+  </view>
+</view>

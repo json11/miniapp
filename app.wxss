@@ -1,0 +1,51 @@
+/**app.wxss**/
+
+view, text, image,  {
+  box-sizing: border-box;
+}
+
+/* 分割线 */
+.sep {
+  background-color: #f6f6f6;
+  height: 2rpx;
+  margin: 0 40rpx;
+}
+
+/* 底部 */
+.fixedBottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* 黄色横向渐变 */
+.yelloGradient {
+  background-image:linear-gradient(132deg,#ffe540 60%, #ffe540);
+}
+
+/* 白色背景按钮，文本颜色黑色 */
+.whiteButton {
+  background-color: white;
+  display: flex;
+  color: black;
+  font-size: 40rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 黄色渐变按钮，文本颜色黑色 */
+.yellowGradientButton {
+  display: flex;
+  color: black;
+  font-size: 40rpx;
+  background-image:linear-gradient(132deg,#ffe540 60%, #ffe540);
+  justify-content: center;
+  align-items: center;
+}
+
+/* flex 为 1 */
+.flex1 {
+  flex: 1;
+}

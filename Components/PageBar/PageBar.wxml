@@ -1,0 +1,22 @@
+<!--Components/PageBar/PageBar.wxml-->
+
+<view style='font-size: 0;'>
+  <!-- 内容区域 -->
+  <view class='dataMenu' style="height: {{ height }}">
+    <!-- 每个item -->
+    <view 
+    wx:for="{{ items }}" 
+    wx:key="{{ item.id }}" 
+    bindtap='onClickItem'
+    data-item="{{ item }}"
+    class="dataMenuNormal">
+      <!-- 标题 -->
+      <text class="{{ selectedId === item.id ? 'dataMenuSelectedText' : 'dataMenuNormalText' }}">{{ item.name }}</text>
+      <!-- 下划线 -->
+      <view class="{{ selectedId === item.id ? 'dataMenuSelectedSep' : 'dataMenuSep' }}"></view>
+    </view>
+  </view>
+  <!-- 分割线 -->
+  <view wx:if="{{ sep === '1' }}" class='sep'></view>
+</view>
+

@@ -1,0 +1,8 @@
+node_modules/
+iospackage/
+androidpackage/
+.idea/
+npm-debug.log
+ios/Pods/
+ios/ReactNative/
+package-lock.json

@@ -1,0 +1,25 @@
+<!--Components/Search/Search.wxml-->
+
+<view class='body'>
+  <view class='contentBody'>
+    <!-- 搜索图片 -->
+    <image 
+    mode='aspectFit'
+    src='./Source/icon_search.png' 
+    class='searchImage'></image>
+    <!-- 输入框 -->
+    <input 
+    confirm-type='search'
+    bindconfirm='onSearchDone'
+    bindinput='onChangeText'
+    value='{{text}}'
+    class='input' 
+    placeholder='{{placeholder}}'></input>
+    <!-- 搜索按钮 -->
+    <view 
+    class='searchBtn' 
+    bindtap='onSearch' >
+      <text class='searchBtnText'>搜索</text>
+    </view>
+  </view>
+</view>

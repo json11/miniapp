@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "navbar": "./Component/NavBar/NavBar",
+    "storeboard": "./StoreBoard/StoreBoard",
+    "storeinfo": "./StoreInfo/StoreInfo",
+    "cooperate": "./Cooperate/Cooperate",
+    "queryorder": "./QueryOrder/QueryOrder"
+  },
+  "enablePullDownRefresh": true
+}

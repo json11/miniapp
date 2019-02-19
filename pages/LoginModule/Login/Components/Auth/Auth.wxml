@@ -1,0 +1,6 @@
+<!--pages/Login/Components/Auth/Auth.wxml-->
+<view class='body'>
+  <image class='authImage' src='/Source/Logo/logo.png'></image>
+  <text class='sm'>饭饭</text>
+  <!-- <button open-type='getUserInfo' bindtap='onAuth'>授权</button> -->
+</view>

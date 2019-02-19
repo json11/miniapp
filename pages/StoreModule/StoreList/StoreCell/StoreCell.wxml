@@ -1,0 +1,23 @@
+<!--pages/StoreModule/Store/StoreCell/StoreCell.wxml-->
+<view class='store-cell' catchtap='onStoreTap' data-storeId='{{store.storeId}}' data-storeName='{{store.storeName}}'>
+  <view class='baseInfo'>
+    <view class='title'><text class='type' wx-if="{{store.pendingPaymentNum > 0}}">待办任务</text></view>
+    <view class='item'>
+      <view class='hd'><text>门店名称：</text></view>
+      <view class='bd'><text>{{store.storeName}}</text></view>
+      <view class='ft {{store.level == "网点" ? "gray" : "yellow"}}'><text>{{store.level || ''}}</text></view>
+    </view>
+    <view class='item'>
+      <view class='hd'><text>老板：</text></view>
+      <view class='bd'><text>{{store.dealerName || ''}}</text></view>
+      <view class='ft' catchtap='tel' data-tel="{{store.dealerTelephone || ''}}"><image class = "tel"  src='../../../../Source/Common/phone.png'></image></view>
+    </view>
+    <view class='item'>
+      <view class='hd'><text>业务经理：</text></view>
+      <view class='bd'><text>{{store.serviceManager || ''}}</text></view>
+    </view>
+  </view>
+  <view class='count'>
+    <text>总进货量：{{store.totalStockNum}}辆</text><text class='ready-pay'>待付款订单：{{store.pendingPaymentNum}}</text>
+  </view>
+</view>

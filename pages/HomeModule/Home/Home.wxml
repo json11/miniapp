@@ -1,0 +1,114 @@
+<!--pages/HomeModule/Home/Home.wxml-->
+
+<!-- 待办任务 -->
+<view class='waitSessionWrapper'>
+
+  <view class='myDataHeader' bindtap='toWaitTask'>
+    <text class='myDataText'>待办任务</text>
+    <text class='waitSessionHeaderText'>全部</text>
+    <image 
+    class='waitSessionHeaderImage' 
+    src='../../../Source/Common/arrowright.png'></image>
+  </view>
+
+  <!-- 代办任务菜单 -->
+  <!-- <pagebar 
+  style='margin-top: 20rpx;'
+  bindselected='onSelectedWaitPageBar'
+  selectedId="{{ waitSelectedId }}"
+  items="{{ waitMenuList }}" ></pagebar> -->
+
+  <!-- 代办任务信息 -->
+  <view class='waitSessionDataBody'>
+    <!-- 意向商户 -->
+    <view class='dataCenterItem' bindtap='toWaitTask'>
+      <view class="dataCenterItemBadgeBody {{!waitData.todayIntentionNum && 'noBackgroundImage'}}">
+        <text>{{ waitData.todayIntentionNum ? ('+' + (waitData.todayIntentionNum || '')) : '' }}</text>
+      </view>
+      <text class='dataCenterItemValue'>{{ waitData.intentionNum || 0 }}</text>
+      <text class='dataCenterItemTitle'>意向商户</text>
+    </view>
+    <!-- 标准店商户 -->
+    <view class='dataCenterItem'>
+      <view class="dataCenterItemBadgeBody {{!waitData.todayStandardNum && 'noBackgroundImage'}}">
+        <text>{{ waitData.todayStandardNum ? ('+' + (waitData.todayStandardNum || '')) : '' }}</text>
+      </view>
+      <text class='dataCenterItemValue'>{{ waitData.standardNum || 0 }}</text>
+      <text class='dataCenterItemTitle'>标准店商户</text>
+    </view>
+  </view>
+</view>
+
+
+<!-- 我的数据 -->
+<view class='myDataWrapper'>
+  <view class='myDataHeader'>
+    <text class='myDataText'>我的数据</text>
+    <text class='myDataTextUnit'>单位：辆</text>
+  </view>
+
+  <!-- 我的数据菜单 -->
+  <pagebar
+  sep='0'
+  style='margin-top: 20rpx;' 
+  bindselected='onSelectedMyDataPageBar' 
+  selectedId="{{ selectedId }}" 
+  items="{{ myDataMenuList }}"></pagebar>
+
+  <!-- 数据 -->
+  <view class='dataBody'>
+
+    <!-- 左侧 -->
+    <view class='dataLeftBody {{left.class}}'></view>
+
+    <!-- 中间 -->
+    <view class='dataCenterBody {{center.class}}'>
+      <!-- 总进货 -->
+      <view class='dataCenterItem'>
+        <view class="dataCenterItemBadgeBody {{!data.todayTotalStockNum && 'noBackgroundImage'}}">
+          <text>{{ data.todayTotalStockNum ? ('+' + (data.todayTotalStockNum || '')) : '' }}</text>
+        </view>
+        <text class='dataCenterItemValue {{center.titleClass}}'>{{ data.totalStockNum || 0 }}</text>
+        <text class='dataCenterItemTitle {{center.titleClass}}'>总进货</text>
+      </view>
+      <!-- 待付款 -->
+      <view class='dataCenterItem' bindtap='onClickWaitPay'>
+        <view class="dataCenterItemBadgeBody {{!data.todayPendingPaymentNum && 'noBackgroundImage'}}">
+          <text>{{ data.todayPendingPaymentNum ? ('+' + (data.todayPendingPaymentNum || '')) : '' }}</text>
+        </view>
+        <text class='dataCenterItemValue {{center.titleClass}}'>{{ data.pendingPaymentNum || 0 }}</text>
+        <text class='dataCenterItemTitle {{center.titleClass}}'>待付款</text>
+      </view>
+      <!-- 在库存 -->
+      <view class='dataCenterItem'>
+        <view class='dataCenterItemBadgeBody noBackgroundImage'>
+          <text></text>
+        </view>
+        <text class='dataCenterItemValue {{center.titleClass}}'>{{ data.inStockNum || 0 }}</text>
+        <text class='dataCenterItemTitle {{center.titleClass}}'>库存数</text>
+      </view>
+    </view>
+
+    <!-- 右侧 -->
+    <view class='dataRightBody {{right.class}}'></view>
+  </view>
+</view>
+
+<!-- 我的服务 -->
+<view class='myServiceWrapper'>
+  <view class='myServiceHeader'>
+    <text class='myServiceText'>我的服务</text>
+  </view>
+  <!-- 服务选项 -->
+  <view class='serviceView'>
+    <view 
+    class='serviceItemView'
+    wx:for="{{services}}"
+    wx:key="{{item.title}}"
+    data-service="{{item}}"
+    bindtap='onClickService'>
+      <image class='serviceItemImageView' src='{{item.src}}'></image>
+      <text class='serviceItemTextView'>{{item.title}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/MineModule/Setting/Setting.wxml-->
+
+<imagetitlerow bindtap='onAlterPWD' title="修改登录密码"></imagetitlerow>
+
+<view style='height: 40rpx;'></view>
+
+<imagetitlerow bindselected='onLoginOut' mode='2' arrow='{{false}}' title="退 出 登 录"></imagetitlerow>
+ 

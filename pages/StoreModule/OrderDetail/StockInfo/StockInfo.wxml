@@ -1,0 +1,8 @@
+<!--pages/StoreModule/OrderDetail/StockInfo/StockInfo.wxml-->
+<view class='container'>
+  <titlecell title="进货信息"></titlecell>
+  <block wx:for="{{commodities}}" wx:for-item="commoditie" wx:for-index="index" wx:key="unique">
+    <stockcell data="{{commoditie}}" currentIndex="{{currentIndex}}" index="{{index}}" bindselect="onSelect"></stockcell>
+  </block>
+  
+</view>

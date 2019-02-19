@@ -1,0 +1,29 @@
+<!--pages/StoreModule/OrderDetail/StockInfo/Cell/StockCell.wxml-->
+<view class='container'>
+  <view class='main' bindtap='onSelect'>
+    <view class='hd'>
+      <image src='{{data.picUrl}}'></image>
+      <view class='model'><text>{{data.customModel}}</text></view>
+    </view>
+    <view class='bd'>
+      <view class='count'><text class='name'>数量：</text><text class='value'>{{data.quantity}}辆</text></view>
+      <view class='calc'><text class='name'>金额小计：</text><text class='value'>￥{{data.totalPrice}}</text></view>
+    </view>
+    <view class='ft'>
+      <image wx:if="{{show}}" class='down' src='../Source/icon_arrowdown.png'></image>
+      <image wx:else class='right' src='../Source/icon_arrowright.png'></image>
+    </view>
+  </view>
+  <view wx:if="{{show}}" class='desc'>
+    <view class='item'>
+      <view class='odd'><text class='name'>版本：</text><text class='value'>{{data.model}}</text></view>
+    </view>
+    <view class='item'>
+      <view class='odd'><text class='name'>车身颜色/配置：</text><text class='value'>{{data.skuInfo}}</text></view>
+    </view>
+    <view class='item'>
+      <view class='odd'><text class='name'>单价：</text><text class='value'>￥{{data.unitPrice}}</text></view>
+      <view class='even'><text class='name'>定金：</text><text class='value'>￥{{data.unitFrontMoney}}</text></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/WaitTaskModule/WaitTaskList/WaitTaskPage/WaitTaskPage.wxml-->
+
+<view class='body'>
+  <search-bar bindsearch='onSearch' placeholder='输入任务关键字模糊搜索'></search-bar>
+  <scroll-view scroll-y="{{ true }}" class='scrollView' bindscrolltoupper='onRefresh' bindscrolltolower='onLoadMore'>
+    <view class='cellBody' wx:for="{{ list }}" wx:key="{{ item.typeTransferTime }}" catchtap='onClickCell' data-item="{{ item }}">
+      <view class='merchantTypeBody'>
+        <text class='merchantTypeText'>{{ item.type }}</text>
+      </view>
+      <view class='cellStoreBody'>
+        <view class='cellStoreSide'></view>
+        <text class='cellStoreValue'>{{ item.storeName || '' }}</text>
+        <image class='cellStoreImage'></image>
+      </view>
+      <titlecell disableTap='1' bindclickcell='onCallPhone' titleWidth='128rpx' height='60rpx' type="phone" sep='0' imageSideValue='1' title="老板：" value="{{ item.contact || '' }}" data-item="{{ item }}"></titlecell>
+      <titlecell titleWidth='128rpx' height='60rpx' title="业务经理：" sep='0' value="{{ item.serviceManager || '' }}"></titlecell>
+      <titlecell titleWidth='128rpx' height='60rpx' title='门店地址：' sep='0' value="{{ item.address || '' }}"></titlecell>
+      <view class='timeBody'>
+        <text class='timeTitle'>{{ '提交时间：' + item.typeTransferTime }}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+

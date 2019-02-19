@@ -1,0 +1,73 @@
+/* pages/WaitTaskModule/Merchant/IntendedAlter/AddressPicker/AddressPicker.wxss */
+
+.maskLayer{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0;
+}
+
+.choose{
+  width: 100%;
+  height: 600rpx;
+  position: fixed;
+  bottom: -600rpx;
+  z-index: 9999;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.toolBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 88rpx;
+  color: #4a4a4a;
+  font-size: 32rpx;
+}
+
+.toolBarCancel {
+  margin-left: 20rpx;
+  text-align: center;
+}
+
+.sep {
+  height: 3rpx;
+  background-color: #eee;
+}
+
+.dataBody {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.scollView {
+  flex: 1;
+}
+
+.cell {
+  height: 70rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cellText {
+  margin-left: 20rpx;
+  color: #4a4a4a;
+  font-size: 32rpx;
+}
+
+.cellSelectedText {
+  margin-left: 20rpx;
+  color: red;
+  font-size: 32rpx;
+}

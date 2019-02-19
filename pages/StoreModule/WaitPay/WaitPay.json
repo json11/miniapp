@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "待付款订单",
+  "usingComponents": {
+    "ordercell": "../Component/OrderCell/OrderCell"
+  },
+  "enablePullDownRefresh": true
+}

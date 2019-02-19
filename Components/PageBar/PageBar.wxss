@@ -1,0 +1,43 @@
+/* Components/PageBar/PageBar.wxss */
+
+.sep {
+  background-color: #f6f6f6;
+  height: 2rpx;
+}
+
+.dataMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: white;
+}
+
+.dataMenuNormal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.dataMenuSelectedSep {
+  width:80rpx;
+  height:4rpx;
+  background:#ffe600;
+}
+
+.dataMenuSelectedText {
+  font-size:28rpx;
+  color:#000000;
+}
+
+.dataMenuSep {
+  width:80rpx;
+  height:4rpx;
+  background: transparent;
+}
+
+.dataMenuNormalText {
+  font-size:28rpx;
+  color:#9b9b9b;
+}

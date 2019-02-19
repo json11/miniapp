@@ -1,0 +1,29 @@
+
+.titleCell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 76rpx;
+  padding-right: 68rpx;
+  background: #fff;
+}
+.hd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleCell .titleLine {
+  width: 4rpx;
+  height: 44rpx;
+  background: #ffe600;
+}
+.titleCell text {
+  margin-left: 20rpx;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+.titleCell .ft text{
+  color:#d4493b;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "subordinatesist": "../Components/SubordinateList/SubordinateList"
+  },
+  "navigationBarTitleText": "业务统计"
+}

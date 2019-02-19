@@ -1,0 +1,14 @@
+<!--Components/Apply/SegmentControlCell/SegmentControlCell.wxml-->
+
+<!-- 最外城包裹 -->
+<!-- 包裹采用左右布局，标题为左，其余为右 -->
+<view class='body'>
+  <!-- 标题 -->
+  <text class='title' style="margin-left: {{ titleMarginLeft }};min-width: {{ titleWidth }}">{{ title }}</text>
+  <!-- segmentcontrol -->
+  <segmentcontrol
+  bindselected='onSelected'
+  items="{{ items }}"
+  value="{{ value }}"></segmentcontrol>
+</view>
+

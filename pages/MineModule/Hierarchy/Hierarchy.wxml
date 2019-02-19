@@ -1,0 +1,55 @@
+<!--pages/MineModule/Hierarchy/Hierarchy.wxml-->
+
+<!-- header 我的上级 -->
+<view class='header' wx:if="{{higherLevel.length}}">
+  <view class='headerSep'></view>
+  <text class='headerTitle'>我的上级</text>
+</view>
+
+<!-- 条目 -->
+<view class='cell' wx:for="{{higherLevel}}" wx:key="{{item.name}}">
+  <!-- 上半部分 -->
+  <view class='cellTop'>
+    <!-- 姓名 -->
+    <text class='cellName'>{{item.name || ''}}</text>
+    <!-- 手机号 -->
+    <text class='cellPhoneNum'>{{item.telephone || ''}}</text>
+    <!-- 打电话 -->
+    <view class='cellPhoneBody' data-phonenum="{{item.telephone}}" catchtap='onPhoneCall'>
+      <image src='../../../Source/Common/phone.png' class='cellPhoneImage'></image>
+    </view>
+  </view>
+  <view class='cellIdentifyBody'>
+    <!-- 职务 -->
+    <text class='cellIdentify'>{{item.orgName || ''}}</text>
+  </view>
+</view>
+
+<!-- header 我的下级 -->
+<view class='header'>
+  <view class='headerSep'></view>
+  <text class='headerTitle'>我的下级</text>
+</view>
+
+<!-- 条目 -->
+<view class='cell' wx:for="{{lowerLevel}}" wx:key="{{item.name}}">
+  <!-- 上半部分 -->
+  <view class='cellTop'>
+    <!-- 姓名 -->
+    <text class='cellName'>{{item.name || ''}}</text>
+    <!-- 手机号 -->
+    <text class='cellPhoneNum'>{{item.telephone || ''}}</text>
+    <!-- 打电话 -->
+    <view class='cellPhoneBody' data-phonenum="{{item.telephone}}" catchtap='onPhoneCall'>
+      <image src='./Source/phone.png' class='cellPhoneImage'></image>
+    </view>
+  </view>
+  <view class='cellIdentifyBody'>
+    <!-- 职务 -->
+    <text class='cellIdentify'>{{item.orgName || ''}}</text>
+  </view>
+</view>
+
+<view wx:if="{{noLowerLevel}}" class='emptyText'>
+  <text>当前人员无下级</text>
+</view>

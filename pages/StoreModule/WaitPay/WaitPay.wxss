@@ -1,0 +1,19 @@
+/* pages/StoreModule/WaitPay/WaitPay.wxss */
+page {
+  background: #f8f8f8;
+}
+.emptyContainer {
+  margin-top: 120rpx;
+  text-align: center;
+}
+.emptyText {
+  color: #4a4a4a;
+  font-size: 32rpx;
+}
+.goUp {
+  position: fixed;
+  bottom: 36rpx;
+  right: 44rpx;
+  width: 100rpx;
+  height: 100rpx;
+}

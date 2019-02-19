@@ -1,0 +1,9 @@
+<!--pages/StoreModule/Store/QueryOrder/QueryOrder.wxml-->
+<view class='container' wx:if="{{!empty}}">
+  <block wx:for="{{orderlist}}" wx:for-item="order" wx:key="unique">
+    <ordercell order='{{order}}' catchtap='onToDetail' data-orderNo='{{order.orderNo}}'></ordercell>
+  </block>
+  <image class='goUp' catchtap= 'backTop' src='../../StoreList/Source/goUp.png'></image>
+</view>
+
+<view class='emptyContainer'><text class='emptyText' wx:if="{{empty}}">未搜索到相关结果</text></view>

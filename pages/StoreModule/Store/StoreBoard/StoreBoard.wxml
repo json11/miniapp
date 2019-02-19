@@ -1,0 +1,18 @@
+<!--pages/StoreModule/Store/StoreBoard/StoreBoard.wxml-->
+<view class='container'>
+  <view class='storeData'>
+    <view class='titleCell'>
+      <view class='titleLine'></view>
+      <text>门店数据</text>
+    </view>
+
+    <view class='segmentCell'>
+      <view class='wrapper'>
+        <text class='tab {{category.type === curCategory ? "active" : ""}}' wx:for= "{{categorys}}" wx:for-item="category" wx:key="unique" catchtap='onCategoryTap' data-category="{{category.type}}">{{category.name}}</text>
+      </view>
+      <view class='unit'><text>单位：辆</text></view>
+      
+    </view>
+    <storedata storeId="{{storeId}}" category="{{curCategory === 'HIGH' ? high.category : curCategory === 'LOW' ? low.category : total.category}}"  data="{{curCategory === 'HIGH' ? high : curCategory === 'LOW' ? low : total}}"></storedata>
+  </view>
+</view>

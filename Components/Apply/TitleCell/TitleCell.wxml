@@ -1,0 +1,54 @@
+<!--Components/Apply/TitleCell/TitleCell.wxml-->
+
+<!-- 最外城包裹 -->
+<!-- 包裹采用左右布局，标题为左，其余为右 -->
+<view wx:if="{{ disableTap === '1' }}" class="body {{ bottomBorderSep === '1' && 'bottomBorderSep' }}" style="min-height: {{ height }}" catchtap="onClickCell">
+  <!-- 竖直的分割线 -->
+  <view wx:if="{{ sideSep === '1' }}" class='columnSep'></view>
+  <!-- 标题 -->
+  <text class='title' style="margin-left: {{ titleMarginLeft }};min-width: {{ titleWidth }};color: {{ titleColor }}">{{ title }}</text>
+  <!-- 除了标题其余部分 -->
+  <view class='rightBody' style="margin-left: {{ valueMarginLeft }};margin-right: {{ marginRight }};">
+    <!-- 其余部分采用上下布局。上为文本框和箭头，下为横线 -->
+    <view class='rightTopBody'>
+      <!-- 文本框 -->
+      <text 
+      class='value' 
+      style="color: {{ value ? 'black' : 'gray' }};{{ imageSideValue === '1' ? '' : 'flex:1' }};">{{ value || placeholder || '' }}</text>
+      <!-- 箭头 -->
+      <slot></slot>
+      <image wx:if="{{ type === 'arrowright' }}" src='../Source/arrowright.png' class='rightTopImageArrow' style="margin-left: {{ imageMarginLeft }}"></image>
+      <image wx:if="{{ type === 'edit' }}" src='../Source/edit.png' class='rightTopImagePhone' style="margin-left: {{ imageMarginLeft }}"></image>
+      <image wx:if="{{ type === 'phone' }}" src='../Source/phone.png' class='rightTopImagePhone' style="margin-left: {{ imageMarginLeft }}"></image>
+      <text wx:if="{{ type === 'text' }}" class='text'>{{ text }}</text>
+    </view>
+    <!-- 横线 -->
+    <view wx:if="{{ sep === '1' }}" class='rightSep'></view>
+  </view>
+</view>
+
+
+<view wx:else class="body {{ bottomBorderSep === '1' && 'bottomBorderSep' }}" style="min-height: {{ height }}" bindtap="onClickCell">
+  <!-- 竖直的分割线 -->
+  <view wx:if="{{ sideSep === '1' }}" class='columnSep'></view>
+  <!-- 标题 -->
+  <text class='title' style="margin-left: {{ titleMarginLeft }};min-width: {{ titleWidth }};color: {{ titleColor }}">{{ title }}</text>
+  <!-- 除了标题其余部分 -->
+  <view class='rightBody' style="margin-left: {{ valueMarginLeft }};margin-right: {{ marginRight }}">
+    <!-- 其余部分采用上下布局。上为文本框和箭头，下为横线 -->
+    <view class='rightTopBody'>
+      <!-- 文本框 -->
+      <text 
+      class='value' 
+      style="color: {{ value ? 'black' : 'gray' }};{{ imageSideValue === '1' ? '' : 'flex:1' }};">{{ value || placeholder || '' }}</text>
+      <!-- 箭头 -->
+      <slot></slot>
+      <image wx:if="{{ type === 'arrowright' }}" src='../Source/arrowright.png' class='rightTopImageArrow' style="margin-left: {{ imageMarginLeft }}"></image>
+      <image wx:if="{{ type === 'edit' }}" src='../Source/edit.png' class='rightTopImagePhone' style="margin-left: {{ imageMarginLeft }}"></image>
+      <image wx:if="{{ type === 'phone' }}" src='../Source/phone.png' class='rightTopImagePhone' style="margin-left: {{ imageMarginLeft }}"></image>
+      <text wx:if="{{ type === 'text' }}" class='text'>{{ text }}</text>
+    </view>
+    <!-- 横线 -->
+    <view wx:if="{{ sep === '1' }}" class='rightSep'></view>
+  </view>
+</view>

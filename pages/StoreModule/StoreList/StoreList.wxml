@@ -1,0 +1,5 @@
+<!--pages/StoreModule/StoreList/StoreList.wxml-->
+<searchbar placeholder="搜索店名/老板姓名/手机号" bindsearch="onSearch"></searchbar>
+<storecell wx:if="{{!empty}}" wx:for="{{storeList}}" wx:key="unique" store="{{item}}"></storecell>
+<text class='emptyText' wx:if="{{empty}}">未搜索到相关结果</text>
+<image class='goUp' catchtap= 'backTop' src='./Source/goUp.png'></image>

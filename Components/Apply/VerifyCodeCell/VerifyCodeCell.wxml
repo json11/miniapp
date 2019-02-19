@@ -1,0 +1,29 @@
+<!--Components/Apply/VerifyCodeCell/VerifyCodeCell.wxml-->
+
+<!-- 最外城包裹 -->
+<!-- 包裹采用左右布局，标题为左，其余为右 -->
+<view class='body'>
+  <!-- 标题 -->
+  <text class='title' style="margin-left: {{ titleMarginLeft }};min-width: {{ titleWidth }}">{{ title }}</text>
+  <!-- 除了标题其余部分 -->
+  <view class='rightBody' style="margin-right: {{ marginRight }}">
+    <!-- 其余部分采用上下布局。上为文本框和箭头，下为横线 -->
+    <view class='rightTopBody'>
+      <!-- 输入框 -->
+      <input 
+      bindfocus='onBeginEdit'
+      bindblur='onEndEdit'
+      class='input'
+      bindinput='onChangeText' 
+      placeholder="{{ placeholder }}" 
+      value='{{value}}'></input>
+      <!-- 验证码按钮 -->
+      <view class='forgetTextView' bindtap='onClickSendCode'>
+        <text class='forgetText'>{{codeText}}</text>
+      </view>
+    </view>
+    <!-- 横线 -->
+    <view class='rightSep'></view>
+  </view>
+</view>
+

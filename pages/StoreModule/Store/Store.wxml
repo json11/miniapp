@@ -1,0 +1,10 @@
+<!--pages/StoreModule/Store/Store.wxml-->
+<view class='container'>
+  <navbar navBars="{{navBars}}" currentIndex="{{currentIndex}}" bindselect="onSelect"></navbar>
+  <view class='main'>
+    <view hidden='{{currentIndex !== 0}}'><storeboard id='storeboard' storeId="{{storeId}}"></storeboard></view>
+    <view hidden='{{currentIndex !== 1}}'> <storeinfo id='storeinfo' storeId="{{storeId}}"></storeinfo></view>
+    <view hidden='{{currentIndex !== 2}}'><cooperate id='cooperate' storeId="{{storeId}}"></cooperate></view>
+    <view hidden='{{currentIndex !== 3}}'> <queryorder id='queryorder' storeId="{{storeId}}"></queryorder></view>
+  </view>
+</view>

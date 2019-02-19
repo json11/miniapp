@@ -1,0 +1,10 @@
+<!--Components/ImageTitleRow/ImageTitleRow.wxml-->
+
+<view bindtap='onClick'>
+  <view class='body' style="height: {{height + 'rpx'}}">
+    <image class='icon leftToEdg' wx:if="{{icon}}" src="{{icon}}"></image>
+    <text class="{{icon ? 'titleToIcon' : 'leftToEdg'}} {{mode === '2' ? 'centerTitle' : 'title'}}">{{title}}</text>
+    <image wx:if="{{arrow}}" class='arrow' mode='aspectFit' src='./Source/arrowright.png'></image>
+  </view>
+  <view class='sep'></view>
+</view>

@@ -1,0 +1,4 @@
+/* pages/StoreModule/OrderDetail/StockInfo/StockInfo.wxss */
+.container {
+  margin-top: 12rpx;
+}

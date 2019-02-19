@@ -1,0 +1,52 @@
+/* pages/StoreModule/Store/StoreInfo/StoreInfo.wxss */
+.container {
+  padding-top: 2rpx;
+  background-color: #f8f8f8;
+}
+.baseInfo {
+  margin-top: 4rpx;
+}
+.manageInfo {
+  margin-top: 10rpx;
+}
+.titleCell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 68rpx;
+}
+.titleCell .titleLine {
+  width: 4rpx;
+  height: 44rpx;
+  background: #ffe600;
+}
+.titleCell text {
+  margin-left: 20rpx;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+.wrapper {
+  padding-bottom:48rpx;
+  background: #fff;
+  font-size: 28rpx;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  padding: 0 40rpx;
+}
+.hd {
+  display: inline-block;
+  width: 180rpx;
+  color: #9b9b9b;
+}
+.bd {
+  color: #000;
+}
+.ft {
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 32rpx;
+}

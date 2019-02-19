@@ -1,0 +1,53 @@
+
+
+<!-- body -->
+<view class='body'>
+ <!-- header -->
+  <view class='header'>
+    <view class='headerSide'></view>
+    <text class='headerTitle'>{{ order.storeName || '' }}</text>
+    <text class='headerStatus' style='{{ order.orderStatusColor }}'>{{ order.orderStatusCn }}</text>
+  </view>
+  <!-- sep -->
+  <view class='sep'></view>
+
+  <block wx:for="{{order.orderModels}}" wx:for-item="orderModel" wx:key="unique">
+    <!-- 品牌 -->
+    <view class='itemBody itemFirstBody'>
+      <text class='itemTitle'>品牌:</text>
+      <text class='itemValue'>{{ orderModel.brand || '' }}</text>
+    </view>
+    <!-- 型号 -->
+    <view class='itemBody'>
+      <text class='itemTitle'>型号:</text>
+      <text class='itemValue'>{{ orderModel.smModel || '' }}</text>
+    </view>
+    <!-- 数量 -->
+    <view class='itemBody'>
+      <text class='itemTitle'>数量:</text>
+      <text class='itemValue itemLastBody'>{{ orderModel.modelNum || '' }}</text>
+    </view>
+
+    <!-- sep -->
+    <view class='marginSep'></view>
+  </block>
+  
+  <!-- sep -->
+  <view class='marginSep'></view>
+
+  <!-- 订单编号 -->
+  <view class='itemBody itemFirstBody'>
+    <text class='itemTitle'>订单编号:</text>
+    <text class='itemValue'>{{ order.orderNo || '' }}</text>
+  </view>
+  <!-- 下单时间 -->
+  <view class='itemBody'>
+    <text class='itemTitle'>下单时间:</text>
+    <text class='itemValue'>{{ order.orderTimeDesc }}</text>
+  </view>
+  <!-- 待付款 -->
+  <view class='itemBody'>
+    <text class='itemTitle'>剩余应付金额:</text>
+    <text class='itemValue itemLastBody'>{{ order.surplusAmount || '' }}</text>
+  </view>
+</view>

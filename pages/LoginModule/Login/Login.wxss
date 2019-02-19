@@ -1,0 +1,5 @@
+/* pages/Login/Login.wxss */
+
+page {
+  height: 100%;
+}

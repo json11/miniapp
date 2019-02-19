@@ -1,0 +1,13 @@
+<!--Components/SMButton/SMButton.wxml-->
+<view 
+class='body'
+style='flex: {{ flex }};opacity:{{nowActivity}};height:{{height}};border-radius:{{borderRadius}};background-color:{{backgroundColor}};display:{{display}}' 
+bindtap='onpress' 
+capture-bind:touchstart="touchStart" 
+capture-bind:touchend="touchEnd">
+  <text
+  class='title'
+  style="font-size:{{fontSize}};color:{{titleColor}}">
+  {{title}}
+  </text>
+</view>

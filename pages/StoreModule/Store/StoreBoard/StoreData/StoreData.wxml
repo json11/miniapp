@@ -1,0 +1,22 @@
+<!--pages/StoreModule/Store/StoreBoard/StoreData/StoreData.wxml-->
+<view class='dataInfo'>
+      <view class='data-item'>
+        <view class='value'><text>{{data.totalStockNum}}</text></view>
+        <view class='name'><text>总进货数</text></view>
+        <view class='rightLine'></view>
+      </view>
+      <view class='data-item' catchtap='onTap' data-num= "{{data.pendingPaymentNum}}">
+        <view class='value'><text style='color:#e97373;'>{{data.pendingPaymentNum}}</text></view>
+        <view class='name'><text>待付款</text></view>
+        <view class='rightLine'></view>
+      </view>
+      <view class='data-item'>
+        <view class='value'><text>{{data.inStockNum}}</text></view>
+        <view class='name'><text>在库数</text></view>
+        <view class='rightLine'></view>
+      </view>
+      <view class='data-item'>
+        <view class='value'><text>{{data.pendingSignNum}}</text></view>
+        <view class='name'><text>待签收</text></view>
+      </view>
+    </view>

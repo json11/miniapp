@@ -1,0 +1,56 @@
+<!--pages/LoginModule/ForgetPWD/ForgetPWD.wxml-->
+
+<!-- 欢迎文字 -->
+<text class='welcome'>找回密码手机验证</text>
+
+<!-- 手机号输入框 -->
+<input 
+type='number'
+class='phoneInput' 
+focus 
+maxlength='11' 
+bindfocus='onPhoneBeginEdit'
+bindblur='onPhoneEndEdit' 
+placeholder='请输入您的手机号' 
+bindinput='onPhoneChangeText'
+value='{{phoneNum}}'></input>
+
+<!-- 手机号输入框底部横线 -->
+<view class="{{phoneEditing ? 'activeLineSep' : 'lineSep'}}"></view>
+
+<!-- 密码输入视图 -->
+<view class='codeInputBody'>
+
+    <!-- 密码输入框 -->
+    <input 
+    type='number'
+    bindfocus='onPWDBeginEdit'
+    bindblur='onPWDEndEdit' 
+    class='codeInput' 
+    bindinput='onPWDChangeText' 
+    placeholder='请输入短信验证码' 
+    value='{{pwd}}'></input>
+
+    <!-- 分割线 -->
+    <view class='forgetSep'></view>
+
+    <!-- 忘记密码按钮 -->
+    <view class='forgetTextView' bindtap='onClickSendCode'>
+      <text class='forgetText'>{{codeText}}</text>
+    </view>
+
+</view>
+
+<!-- 密码底部横线 -->
+<view class="{{PWDEditing ? 'activeLineSep' : 'lineSep'}}"></view>
+
+<!-- 登陆按钮 -->
+<view
+style="opacity:{{ contentValid ? 1 : 0.6 }}"
+bindtap='onClickLogin'
+class='submit'>确 定</view>
+<!-- <button 
+style="opacity:{{ contentValid ? 1 : 0.6 }}"
+open-type="getUserInfo" 
+bindgetuserinfo='getUserInfoAction' 
+class='submit'>登 陆</button> -->

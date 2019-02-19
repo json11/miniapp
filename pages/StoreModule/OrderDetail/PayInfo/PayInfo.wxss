@@ -1,0 +1,56 @@
+/* pages/StoreModule/OrderDetail/PayInfo/PayInfo.wxss */
+.container {
+  margin-top: 12rpx;
+  padding-bottom: 40rpx;
+  background: #fff;
+}
+
+.titleCell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 76rpx;
+  padding-right: 40rpx;
+  background: #fff;
+}
+.hd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleCell .titleLine {
+  width: 4rpx;
+  height: 44rpx;
+  background: #ffe600;
+}
+.titleCell text {
+  margin-left: 40rpx;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+.titleCell text.tip {
+  margin-left: 0;
+  font-size: 16rpx;
+  color:#d4493b;
+}
+.titleCell .ft text{
+  font-size: 40rpx;
+  color:#000;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 40rpx;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #9b9b9b;
+}
+.item .value {
+  display: inline-block;
+  width: 140rpx;
+  text-align: right;
+  color: #000;
+}

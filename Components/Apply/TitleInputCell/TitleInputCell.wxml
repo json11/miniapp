@@ -1,0 +1,30 @@
+<!--Components/Apply/TitleInputCell/TitleInputCell.wxml-->
+
+<!-- 最外城包裹 -->
+<!-- 包裹采用左右布局，标题为左，其余为右 -->
+<view class='body'>
+  <!-- 标题 -->
+  <text class='title' style="margin-left: {{ titleMarginLeft }};min-width: {{ titleWidth }}">{{ title }}</text>
+  <!-- 除了标题其余部分 -->
+  <view class='rightBody' style="margin-right: {{ marginRight }}">
+    <!-- 其余部分采用上下布局。上为文本框和箭头，下为横线 -->
+    <view class='rightTopBody'>
+      <!-- 输入框 -->
+      <input 
+      inputType="{{ inputType }}"
+      maxlength="{{ maxlength }}"
+      bindfocus='onBeginEdit'
+      bindblur='onEndEdit'
+      class='input'
+      bindinput='onChangeText' 
+      placeholder="{{ placeholder }}" 
+      value='{{value}}'></input>
+      <!-- 箭头 -->
+      <image wx:if="{{ type !== 'none' }}" src='./arrowright.png' class='rightTopImage'></image>
+      <text wx:if="{{ type === 'text' }}" class='text'>{{ text }}</text>
+    </view>
+    <!-- 横线 -->
+    <view class='rightSep'></view>
+  </view>
+</view>
+

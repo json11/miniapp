@@ -1,0 +1,12 @@
+<!--Components/SegmentControl/SegmentControl.wxml-->
+
+<view class='body'>
+  <view 
+  wx:for="{{ items }}" 
+  wx:key="{{ item.code }}" 
+  class="{{ item.code === value ? 'selectedItem' : 'item' }}" 
+  data-item="{{ item }}"
+  catchtap='onClickItem'>
+    <text class="{{ item.code === value ? 'itemSelectedText' : 'itemText' }}">{{ item.name }}</text>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+/* pages/StoreModule/StoreList/StoreList.wxss */
+
+page {
+  background-color: rgb(247, 247, 247);
+}
+
+
+.emptyText {
+  display: block;
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 32rpx;
+  margin-top: 120rpx;
+}
+
+.goUp {
+  position: fixed;
+  bottom: 36rpx;
+  right: 44rpx;
+  width: 100rpx;
+  height: 100rpx;
+}

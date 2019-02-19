@@ -1,0 +1,208 @@
+/* pages/HomeModule/Home/Home.wxss */
+page {
+  background: #f8f8f8;
+}
+
+/* 代办任务 */
+.waitSessionWrapper {
+  background-color: white;
+}
+
+/* 代办头部文本 */
+.waitSessionHeaderText {
+  color: gray;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+
+.waitSessionHeaderImage {
+  width: 12rpx;
+  height: 22rpx;
+  margin-right: 20rpx;
+}
+
+/* 代办任务数据展示外层包裹视图 */
+.waitSessionDataBody {
+  display: flex;
+  flex: 1;
+  height: 214rpx;
+  border-radius:32rpx;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 我的数据，菜单栏-全部-高速-低速 */
+.myDataWrapper {
+  margin-top: 10rpx;
+  padding-bottom: 20rpx;
+  background: #fff;
+}
+
+.myDataHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 72rpx;
+  margin-top: 10rpx;
+}
+
+.myDataText {
+  flex: 1;
+  color: #000;
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  font-weight: bold;
+}
+
+.myDataTextUnit {
+  color: gray;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+
+/* 数据展示 */
+
+.dataBody {
+  display: flex;
+  /* margin-top: 20rpx; */
+  align-items: center;
+}
+
+.yellow {
+  background: linear-gradient(135deg, rgb(255, 252, 222), rgb(255, 228, 82));
+}
+
+.black {
+  background: linear-gradient(90deg, rgb(103, 103, 103), rgb(10, 10, 10));
+}
+
+.dataLeftBody {
+  display: inline-flex;
+  margin-left: 60rpx;
+  width: 60rpx;
+  height: 156rpx;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+}
+
+.dataRightBody {
+  display: inline-flex;
+  margin-right: 60rpx;
+  width: 60rpx;
+  height: 156rpx;
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.dataCenterBody {
+  display: flex;
+  flex: 1;
+  height: 242rpx;
+  border-radius:32rpx;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 中间模块横向布局中的每个item，例如：总进货item */
+.dataCenterItem {
+  display: inline-flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* 总进货的数量 */
+.dataCenterItemValue {
+  font-size:60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+/* 总进货这几个字 */
+.dataCenterItemTitle {
+  font-size:32rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+/* item 为白色风格时的文本颜色 */
+.dataCenterItemWhite {
+  color: #4a4a4a;
+}
+
+/* item 为黑色风格时的文本颜色 */
+.dataCenterItemBlack {
+  color: white;
+}
+
+.dataCenterItemBadgeBody {
+  display: flex;
+  margin-left: 120rpx;
+  align-self: center;
+  align-items: stretch;
+  flex-direction: column;
+  width: 42rpx;
+  height: 22rpx;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAWCAYAAAC2ew6NAAAAAXNSR0IArs4c6QAAAX1JREFUSA3Vl79KA0EQxmf2EtMIgpBG1ChWVjY+SMw7mDeIWF4ppItdbCy0NOYBBHuxEQsLEYyITRpBCYLcjfMpe9yZQA5M3M0Ud3uzc7u/2z+z3zGNMKnXi0/9qCpCVWHaZqIlEZkfEfpnFzO/C9ELC10zU3e1HHS53f783bAyZO2xtrtDEjcVbCNb8z9PCv5AbBprnaPzdI8JqISh6d08H4jEjXSAqzKzaVa2lvc5DGMwFCyIT5BgwoApE4p7uHyPKKZb4qgDh2/GJqhhGTA2Tq8f3blak+MGBmu2Ug42zc/udrNxxkGiHgMIRoMUlOcFlzFgNMiTLiHy9A1Gg2SeJ9hlDBh16qdz4kz6w8ykG5xGezhiZwIUOmA2QFWseA+KhA9F5T0olBRkn9egUFBW7nkLamWezSKJzLMO1/eMcE5JZ+egCpbrVyQBZeKBnqkXxHxpjNwWObgvzZVeF09ab9qY5ly3VlCwKyZpycLK2fpx+DGEc3o45HLh+AIqUYxU26tKGQAAAABJRU5ErkJggg==')
+}
+
+.noBackgroundImage {
+  background-image: none;
+}
+
+.dataCenterItemBadgeBody {
+  color: white;
+  font-size: 16rpx;
+  text-align: center;
+}
+
+/* 我的服务css */
+.myServiceWrapper {
+  margin-top: 10rpx;
+  background: #fff;
+}
+.myServiceHeader {
+  display: flex;
+  align-items: center;
+  height: 72rpx;
+  padding-left: 20rpx;
+}
+.myServiceText {
+  color: #000;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.serviceView {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.serviceItemView {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 216rpx;
+}
+
+.serviceItemImageView {
+  width: 66rpx;
+  height: 66rpx;
+}
+
+.serviceItemTextView {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+}

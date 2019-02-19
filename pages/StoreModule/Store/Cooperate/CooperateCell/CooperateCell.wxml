@@ -1,0 +1,17 @@
+<!--pages/StoreModule/Store/Cooperate/CooperateCell/CooperateCell.wxml-->
+<view class='brandItem' wx:for="{{carModelList}}" wx:for-item="carModel" wx:key="unique">
+  <view class='titleCell'>
+    <view class='titleLine'></view>
+    <text>{{carModel.brandName}}</text>
+  </view>
+  <view class='modelWrapper'>
+    <view class='modelItem' wx:for="{{carModel.modelList}}" wx:for-item="model" wx:key="unique">
+      <view class='pic' catchtap='onClickImage' data-list="{{carModel.modelList}}" data-url="{{model.url}}">
+        <image src='{{model.url}}'></image>
+      </view>
+      <view class='modelName'>
+        <text>{{model.modelName || ' '}}</text>
+      </view>
+    </view>
+  </view>
+</view>

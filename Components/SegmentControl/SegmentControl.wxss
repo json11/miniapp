@@ -1,0 +1,41 @@
+/* Components/SegmentControl/SegmentControl.wxss */
+
+.body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rpx;
+  height: 40rpx;
+  background-color: #e6e6e6;
+  border-radius: 20rpx;
+  min-width: 130rpx;
+}
+
+.selectedItem {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rpx;
+  height: 40rpx;
+  background-color: #ffe600;
+  border-radius: 20rpx;
+  min-width: 130rpx;
+}
+
+.itemText {
+  font-size:28rpx;
+  color:#9b9b9b;
+  margin: 10rpx;
+}
+
+.itemSelectedText {
+  font-size:28rpx;
+  color:black;
+  margin: 10rpx;
+}

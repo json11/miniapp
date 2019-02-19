@@ -1,0 +1,86 @@
+/* pages/WaitTaskModule/Merchant/Detail/Detail.wxss */
+
+page {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+}
+
+/* 顶部意向商户信息容器 */
+
+.merchantContainer {
+  background-color: #f6f6f6;
+}
+
+/* 商户类型 */
+
+.merchantBody {
+  margin: 20rpx 30rpx;
+  border-radius: 12rpx;
+  background-color: white;
+  overflow: hidden;
+  box-shadow:0 2px 4px 0 #e5e5e5;
+  font-size: 0;
+}
+
+.merchantTypeBadgeBody {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #50e3c2;
+  border-bottom-right-radius: 16rpx;
+  border-top-left-radius: 16rpx;
+  height: 32rpx;
+}
+
+.merchantTypeBadgeText {
+  color: white;
+  font-size: 20rpx;
+  margin: 4rpx 6rpx;
+}
+
+.merchantTypeBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60rpx;
+  background-color: #f9f9f9;
+}
+
+.merchantTypeTitle {
+  color: #4a4a4a;
+  font-size: 24rpx;
+}
+
+.merchantTypeValue {
+  color: black;
+  font-size: 28rpx;
+}
+
+.pictureContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40rpx;
+  background-color: white;
+}
+
+.newVisitBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 70rpx;
+}
+
+.newVisitImage {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.newVisitText {
+  margin-left: 24rpx;
+  color: black;
+  font-size: 28rpx;
+}

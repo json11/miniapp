@@ -1,0 +1,29 @@
+
+<text class='welcome'>请输入原密码</text>
+
+<view class='codeInputBody'>
+
+    <input 
+    bindfocus='onPWDBeginEdit'
+    bindblur='onPWDEndEdit' 
+    class='codeInput' 
+    password="{{!showPWD}}" 
+    bindinput='onPWDChangeText' 
+    placeholder='请输入您的密码' 
+    value='{{pwd}}'></input>
+
+    <view class='eyeView' bindtap='onClickEyeAction'>
+      <image 
+      class='eyeImage'
+      mode='aspectFit' 
+      src="{{showPWD ? '/Source/Common/icon_eye_open.png' : '/Source/Common/icon_eye_close.png'}}"></image>
+    </view>
+
+</view>
+
+<view class="{{PWDEditing ? 'activeLineSep' : 'lineSep'}}"></view>
+
+<view
+style="opacity:{{ contentValid ? 1 : 0.6 }}"
+bindtap='onEnsure'
+class='submit'>下一步</view>

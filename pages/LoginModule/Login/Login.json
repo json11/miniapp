@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "auth": "./Components/Auth/Auth",
+    "login": "./Components/Login/Login"
+  },
+  "navigationBarTitleText": "登录"
+}

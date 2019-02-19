@@ -1,0 +1,80 @@
+/* pages/StatisticModule/SubordinateList/SubordinateList.wxss */
+
+.emptyText {
+  display: block;
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 32rpx;
+  margin-top: 120rpx;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 68rpx;
+  background-color: white;
+}
+
+.headerSep {
+  display: inline-block;
+  background-color: #ffe600;
+  width: 6rpx;
+  height: 44rpx;
+}
+
+.headerTitle {
+  margin-left: 40rpx;
+  color: black;
+  font-size: 28rpx;
+  flex: 1;
+}
+
+.headerSubTitle {
+  font-size:28rpx;
+  color:#9b9b9b;
+  margin-right: 40rpx;
+}
+
+.menu {
+  margin-top: 40rpx;
+  height: 68rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menuText {
+  flex: 1;
+  font-size:28rpx;
+  color:#9b9b9b;
+  text-align: center;
+}
+
+.item {
+  height: 68rpx;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.itemTextBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+}
+
+.itemText {
+  flex: 1;
+  font-size:28rpx;
+  color: black;
+  text-align: center;
+}
+
+.sep {
+  height: 1.6rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background-color: #eee;
+}

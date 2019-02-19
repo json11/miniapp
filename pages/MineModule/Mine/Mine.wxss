@@ -1,0 +1,70 @@
+/* pages/MineModule/Mine/Mine.wxss */
+
+page {
+  background-color: #f8f8f8;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.headerImageView {
+  display: inline-flex;
+  margin-left: 40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerImage {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  overflow: hidden;
+}
+
+/* header right */
+.hr {
+  flex: 1;
+  margin-left: 10rpx;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+/* header right top body，头部右半部分，上边名字那行 */
+.hrtb {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+/* header name */
+.hName {
+  color: #4a4a4a;
+  font-size: 36rpx;
+  line-height: 36rpx;
+}
+
+/* header  */
+.hIdentify {
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  color: #4a4a4a;
+  margin-top: 12rpx;
+}
+
+
+/* header right top body，头部右半部分，下边边管辖区域那行 */
+.hrbb {
+  display: inline-block;
+  color: #9b9b9b;
+  font-size: 24rpx;
+  margin-top: 16rpx;
+}

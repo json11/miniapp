@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "欢迎使用饭饭",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "pagebar": "../../../Components/PageBar/PageBar"
+  }
+}

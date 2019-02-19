@@ -1,0 +1,15 @@
+<!--pages/StoreModule/OrderDetail/PayInfo/PayInfo.wxml-->
+<view class='container'>
+  <view class='titleCell'>
+    <view class='hd'>
+      <view class='titleLine'></view>
+      <text>订单总额</text>
+      <text class='tip'>(不含运费)：</text>
+    </view>
+    <view class='ft'>
+      <text>￥{{data.totalPrice}}</text>
+    </view>
+  </view>
+  <view class='item'><text class='name'>总实付款</text><text class='value'>￥{{data.totalPaid}}</text> </view>
+  <view class='item'><text class='name'>剩余应付金额</text><text class='value'>￥{{data.restReceivable}}</text> </view>
+</view>

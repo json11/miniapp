@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的门店",
+  "usingComponents": {
+    "searchbar": "/Components/Search/Search",
+    "storecell": "./StoreCell/StoreCell"
+  },
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,7 @@
+/* pages/StoreModule/StoreList/StoreList.wxss */
+page {
+  background-color: #fff;
+}
+.main {
+  padding-top: 88rpx;
+}

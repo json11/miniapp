@@ -1,0 +1,6 @@
+<!--pages/StoreModule/OrderDetail/OrderDetail.wxml-->
+<view class='container'>
+  <orderinfo data="{{detail}}"></orderinfo>
+  <stockinfo commodities="{{detail.commodities}}"></stockinfo>
+  <payinfo data="{{detail}}"></payinfo>
+</view>
